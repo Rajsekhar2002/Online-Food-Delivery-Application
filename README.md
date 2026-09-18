@@ -1,51 +1,166 @@
-# Online Food Delivery Project
+# Online Food Delivery Application
 
-This project is a full-stack online food delivery application built with a Spring Boot backend and React frontends.
+A full-stack online food delivery application developed using **Spring Boot and React.js**, with separate customer and admin interfaces. The application provides food browsing, cart management, order placement, order tracking, authentication, and online payment integration.
 
-## Tech Stack
-- Backend: Java, Spring Boot, Spring Security, JWT, MongoDB, AWS S3
-- Frontend: React, Vite, Bootstrap, React Router
-- Admin panel: React + Vite
+ Tech Stack
 
-## Project Structure
-- `online-food-delivery-project/foodiesapi` - REST API backend
-- `online-food-delivery-project/foodies` - customer frontend
-- `online-food-delivery-project/adminpanel` - admin frontend
+ Backend
 
-## Features
-- User registration and login
-- Food listing and search
-- Cart management
-- Order placement and tracking
-- Admin food and order management
-- Razorpay payment integration
+* Java
+* Spring Boot
+* Spring Security
+* JWT Authentication
+* MongoDB
+* AWS S3
+* REST APIs
+* Maven
 
-## Prerequisites
-- Java 21+
-- Maven
-- Node.js 18+
-- MongoDB running locally or configured remotely
+ Customer Frontend
 
-## Run Backend
+* React.js
+* Vite
+* Bootstrap
+* React Router
+
+ Admin Panel
+
+* React.js
+* Vite
+* Bootstrap
+* React Router
+
+ Payment
+
+* Razorpay
+
+ Project Structure
+
+```text
+online-food-delivery-project/
+├── foodiesapi/       # Spring Boot REST API backend
+├── foodies/          # Customer frontend
+├── adminpanel/       # Admin frontend
+└── food images/      # Food image resources
+```
+
+ Key Features
+
+* User registration and login
+* JWT-based authentication and authorization
+* Secure password handling using Spring Security
+* Food listing and search
+* Shopping cart management
+* Order placement
+* Order tracking and status management
+* Admin food management
+* Admin order management
+* AWS S3 integration for food image storage
+* Razorpay payment integration
+* RESTful API architecture
+* MongoDB database integration
+
+Prerequisites
+
+Make sure the following are installed before running the project:
+
+* Java 21 or later
+* Maven
+* Node.js 18 or later
+* MongoDB
+* Git
+
+ Backend Setup
+
+Navigate to the backend directory:
+
 ```bash
 cd online-food-delivery-project/foodiesapi
+```
+
+Run the Spring Boot application:
+
+```bash
 ./mvnw spring-boot:run
 ```
 
-## Run Customer Frontend
+On Windows, you can use:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+ Customer Frontend Setup
+
+Navigate to the customer frontend:
+
 ```bash
 cd online-food-delivery-project/foodies
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-## Run Admin Frontend
+## Admin Panel Setup
+
+Navigate to the admin panel:
+
 ```bash
 cd online-food-delivery-project/adminpanel
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-## Notes
-- Update MongoDB and environment-specific configuration in the backend `application.properties` file before running the app.
-- The project was prepared for GitHub publishing after fixing the Java encoding issues and completing repo setup.
+ Configuration
+
+Before running the backend, configure the required environment variables in your local environment.
+
+The backend uses environment variables for sensitive configuration such as:
+
+* MongoDB configuration
+* AWS S3 credentials
+* JWT secret
+* Razorpay credentials
+
+Do not commit actual API keys, passwords, or secret credentials to GitHub.
+
+ Application Modules
+
+ Customer
+
+* Register and log in
+* Browse available food items
+* Search for food
+* Add items to cart
+* Place orders
+* Make online payments
+* Track order status
+
+Admin
+
+* Manage food items
+* Manage food images
+* View and manage customer orders
+* Update order status
+
+## Project Purpose
+
+This project was developed as a **full-stack software development project** to demonstrate practical knowledge of Java, Spring Boot, REST APIs, Spring Security, JWT, MongoDB, React.js, AWS S3, and payment integration.
