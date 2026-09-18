@@ -1,0 +1,38 @@
+# Root project generated artifacts
+__MACOSX/
+.DS_Store
+.idea/
+.vscode/
+
+# Node / Frontend
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.vite/
+**/*.local
+**/npm-debug.log*
+
+# Java / Maven / Spring Boot
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+**/.classpath
+**/.project
+**/.factorypath
+**/.springBeans
+**/.settings/
+**/.sts4-cache/
+
+# OS / editor temp files
+**/.DS_Store
+**/Thumbs.db
+**/*.iml
+**/*.ipr
+**/*.iws
+**/*.swp
+**/*.swo
+
+# Environment files
+**/.env
+**/.env.*
